@@ -23,9 +23,9 @@ use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity or_module is
-    Port ( sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
-           sr2 : in  STD_LOGIC_VECTOR (31 downto 0);
-           result : out  STD_LOGIC_VECTOR (31 downto 0)
+    Port ( i_sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
+           i_sr2 : in  STD_LOGIC_VECTOR (31 downto 0);
+           o_Result : out  STD_LOGIC_VECTOR (31 downto 0)
 			  );
 end or_module;
 
@@ -33,7 +33,7 @@ architecture Behavioral of or_module is
 
 
 begin
-	result <= sr1 or sr2;
+	o_Result <= i_sr1 or i_sr2;
 
 end Behavioral;
 

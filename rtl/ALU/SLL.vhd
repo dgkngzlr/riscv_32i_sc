@@ -32,17 +32,17 @@ USE ieee.numeric_std.ALL;
 --use UNISIM.VComponents.all;
 
 entity SLL_op is
-    Port ( sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
-           sr2: in  STD_LOGIC_VECTOR (4 downto 0);
-           Result : out  STD_LOGIC_VECTOR (31 downto 0));
+    Port ( i_sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
+           i_sr2: in  STD_LOGIC_VECTOR (4 downto 0);
+           o_Result : out  STD_LOGIC_VECTOR (31 downto 0));
 end SLL_op;
 
 architecture Behavioral of SLL_op is
 
 begin
-process (sr1,sr2)
+process (i_sr1,i_sr2)
 begin			
-	Result <= std_logic_vector(unsigned(sr1) SLL(to_integer(unsigned(sr2))));	
+	o_Result <= std_logic_vector(unsigned(i_sr1) SLL(to_integer(unsigned(i_sr2))));	
 end process;
 
 end Behavioral;

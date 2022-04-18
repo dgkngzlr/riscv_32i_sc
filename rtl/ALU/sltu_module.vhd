@@ -31,9 +31,9 @@ USE ieee.numeric_std.ALL;
 
 entity sltu_module is
 	generic(N: integer := 32);
-    Port ( sr1 : in  STD_LOGIC_VECTOR (N-1 downto 0);
-           sr2 : in  STD_LOGIC_VECTOR (N-1 downto 0);
-           result : out  STD_LOGIC_VECTOR (N-1 downto 0));
+    Port ( i_sr1 : in  STD_LOGIC_VECTOR (N-1 downto 0);
+           i_sr2 : in  STD_LOGIC_VECTOR (N-1 downto 0);
+           o_Result : out  STD_LOGIC_VECTOR (N-1 downto 0));
 end sltu_module;
 
 architecture Behavioral of sltu_module is
@@ -41,18 +41,18 @@ architecture Behavioral of sltu_module is
 signal sr1_u,sr2_u: unsigned (N-1 downto 0);
 signal result_temp: std_logic;
 begin
-sr1_u<= unsigned(sr1);
-sr2_u<= unsigned(sr2);
-process(sr1,sr2)
+sr1_u<= unsigned(i_sr1);
+sr2_u<= unsigned(i_sr2);
+process(i_sr1,i_sr2)
 	begin
-		if(sr1<=sr2) then
+		if(i_sr1<=i_sr2) then
 			result_temp<='1';
 		else
 			result_temp<='0';
 		end if;
 end process;
-result(30 downto 0)<=x"0000000"&"000";
-result(31)<= result_temp;
+o_Result(30 downto 0)<=x"0000000"&"000";
+o_Result(31)<= result_temp;
 
 end Behavioral;
 

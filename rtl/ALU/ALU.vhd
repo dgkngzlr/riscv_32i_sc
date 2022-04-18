@@ -31,15 +31,15 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity ALU is
-    Port ( func3 : in  STD_LOGIC_VECTOR (2 downto 0);
-		   func7 : in  STD_LOGIC_VECTOR (6 downto 0);
-           sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
-           sr2 : in  STD_LOGIC_VECTOR (31 downto 0);
-		   V: out STD_LOGIC;
-		   N: out STD_LOGIC;
-		   Z: out STD_LOGIC;
-		   C: out STD_LOGIC;
-           Result : out  STD_LOGIC_VECTOR (31 downto 0));
+    Port ( i_func3 : in  STD_LOGIC_VECTOR (2 downto 0);
+		   i_func7 : in  STD_LOGIC_VECTOR (6 downto 0);
+           i_sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
+           i_sr2 : in  STD_LOGIC_VECTOR (31 downto 0);
+		   o_V: out STD_LOGIC;
+		   o_N: out STD_LOGIC;
+		   o_Z: out STD_LOGIC;
+		   o_C: out STD_LOGIC;
+           o_Result : out  STD_LOGIC_VECTOR (31 downto 0));
 end ALU;
 
 architecture Behavioral of ALU is
@@ -52,93 +52,93 @@ signal sub_carry, sub_zero, sub_negate,sub_overflow: STD_LOGIC;
 signal Result_temp:STD_LOGIC_VECTOR (31 downto 0);
 component ADD is
 	generic(N: integer := 32);
-    Port ( sr1 : in  STD_LOGIC_VECTOR (N-1 downto 0);
-           sr2 : in  STD_LOGIC_VECTOR (N-1  downto 0);
-           sout : out  STD_LOGIC_VECTOR (N-1  downto 0);
-           cout : out  STD_LOGIC);
+    Port ( i_sr1 : in  STD_LOGIC_VECTOR (N-1 downto 0);
+           i_sr2 : in  STD_LOGIC_VECTOR (N-1  downto 0);
+           o_Sum : out  STD_LOGIC_VECTOR (N-1  downto 0);
+           o_Carry : out  STD_LOGIC);
 end component;
 
 component SUB is
 	generic(N: integer := 32);
-    Port ( sr1 : in  STD_LOGIC_VECTOR (N-1 downto 0);
-           sr2 : in  STD_LOGIC_VECTOR (N-1  downto 0);
-           sout : out  STD_LOGIC_VECTOR (N-1  downto 0);
-           cout : out  STD_LOGIC);
+    Port ( i_sr1 : in  STD_LOGIC_VECTOR (N-1 downto 0);
+           i_sr2 : in  STD_LOGIC_VECTOR (N-1  downto 0);
+           o_Sum : out  STD_LOGIC_VECTOR (N-1  downto 0);
+           o_Carry : out  STD_LOGIC);
 end component;
 component SLL_op is
-    Port ( sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
-           sr2: in  STD_LOGIC_VECTOR (4 downto 0);
-           Result : out  STD_LOGIC_VECTOR (31 downto 0));
+    Port ( i_sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
+           i_sr2: in  STD_LOGIC_VECTOR (4 downto 0);
+           o_Result : out  STD_LOGIC_VECTOR (31 downto 0));
 end component;
 component slt_module is
 	generic(N: integer := 32);
-    Port ( sr1 : in  STD_LOGIC_VECTOR (N-1 downto 0);
-           sr2 : in  STD_LOGIC_VECTOR (N-1 downto 0);
-           result : out  STD_LOGIC_VECTOR (N-1 downto 0));
+    Port ( i_sr1 : in  STD_LOGIC_VECTOR (N-1 downto 0);
+           i_sr2 : in  STD_LOGIC_VECTOR (N-1 downto 0);
+           o_Result : out  STD_LOGIC_VECTOR (N-1 downto 0));
 end component;
 
 component sltu_module is
 	generic(N: integer := 32);
-    Port ( sr1 : in  STD_LOGIC_VECTOR (N-1 downto 0);
-           sr2 : in  STD_LOGIC_VECTOR (N-1 downto 0);
-           result : out  STD_LOGIC_VECTOR (N-1 downto 0));
+    Port ( i_sr1 : in  STD_LOGIC_VECTOR (N-1 downto 0);
+           i_sr2 : in  STD_LOGIC_VECTOR (N-1 downto 0);
+           o_Result : out  STD_LOGIC_VECTOR (N-1 downto 0));
 end component;
 
 component xor_module is
-    Port ( sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
-           sr2 : in  STD_LOGIC_VECTOR (31 downto 0);
-           result : out  STD_LOGIC_VECTOR (31 downto 0)
+    Port ( i_sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
+           i_sr2 : in  STD_LOGIC_VECTOR (31 downto 0);
+           o_Result : out  STD_LOGIC_VECTOR (31 downto 0)
 			  );
 end component;
 
 component srl_module is
-    Port ( sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
-           sr2 : in  STD_LOGIC_VECTOR (4 downto 0);
-           Result : out  STD_LOGIC_VECTOR (31 downto 0));
+    Port ( i_sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
+           i_sr2 : in  STD_LOGIC_VECTOR (4 downto 0);
+           o_Result : out  STD_LOGIC_VECTOR (31 downto 0));
 end component;
 
 component or_module is
-    Port ( sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
-           sr2 : in  STD_LOGIC_VECTOR (31 downto 0);
-           result : out  STD_LOGIC_VECTOR (31 downto 0)
+    Port ( i_sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
+           i_sr2 : in  STD_LOGIC_VECTOR (31 downto 0);
+           o_Result : out  STD_LOGIC_VECTOR (31 downto 0)
 			  );
 end component;
 
 component and_module is
-    Port ( sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
-           sr2 : in  STD_LOGIC_VECTOR (31 downto 0);
-           result : out  STD_LOGIC_VECTOR (31 downto 0)
+    Port ( i_sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
+           i_sr2 : in  STD_LOGIC_VECTOR (31 downto 0);
+           o_Result : out  STD_LOGIC_VECTOR (31 downto 0)
 			  );
 end component;
 
 component sra_module is
-    Port ( sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
-           sr2 : in  STD_LOGIC_VECTOR (4 downto 0);
-           Result : out  STD_LOGIC_VECTOR (31 downto 0));
+    Port ( i_sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
+           i_sr2 : in  STD_LOGIC_VECTOR (4 downto 0);
+           o_Result : out  STD_LOGIC_VECTOR (31 downto 0));
 end component;
 
 begin
-adder1: ADD port map(sr1=>sr1,sr2=>sr2, sout=>add_result, cout=>add_carry);
+adder1: ADD port map(i_sr1=>i_sr1,i_sr2=>i_sr2, o_Sum=>add_result, o_Carry=>add_carry);
 
-subtractor1: SUB port map(sr1=>sr1,sr2=>sr2, sout=>sub_result, cout=> sub_carry);
+subtractor1: SUB port map(i_sr1=>i_sr1,i_sr2=>i_sr2, o_Sum=>sub_result, o_Carry=> sub_carry);
 
-sll_module1: SLL_op port map(sr1=>sr1,sr2=>sr2(4 downto 0), Result=>sll_result);
+sll_module1: SLL_op port map(i_sr1=>i_sr1,i_sr2=>i_sr2(4 downto 0), o_Result=>sll_result);
 
-slt_module1: slt_module port map(sr1=>sr1,sr2=>sr2, result=>slt_result);
+slt_module1: slt_module port map(i_sr1=>i_sr1,i_sr2=>i_sr2, o_Result=>slt_result);
 
-sltu_module1: sltu_module port map(sr1=>sr1,sr2=>sr2, result=>sltu_result);
+sltu_module1: sltu_module port map(i_sr1=>i_sr1,i_sr2=>i_sr2, o_Result=>sltu_result);
 
-xor_module1:xor_module port map(sr1=>sr1,sr2=>sr2, result=>xor_result);
+xor_module1:xor_module port map(i_sr1=>i_sr1,i_sr2=>i_sr2, o_Result=>xor_result);
 
-srl_module1:srl_module port map(sr1=>sr1,sr2=>sr2(4 downto 0), Result=>srl_result);
+srl_module1:srl_module port map(i_sr1=>i_sr1,i_sr2=>i_sr2(4 downto 0), o_Result=>srl_result);
 
-or_module1: or_module port map (sr1=>sr1,sr2=>sr2, result=>or_result);
+or_module1: or_module port map (i_sr1=>i_sr1,i_sr2=>i_sr2, o_Result=>or_result);
 
-and_module1: and_module port map(sr1=>sr1,sr2=>sr2, result=> and_result);
+and_module1: and_module port map(i_sr1=>i_sr1,i_sr2=>i_sr2, o_Result=> and_result);
 
-sra_module1: sra_module port map(sr1=>sr1,sr2=>sr2(4 downto 0),Result=> sra_result);
+sra_module1: sra_module port map(i_sr1=>i_sr1,i_sr2=>i_sr2(4 downto 0),o_Result=> sra_result);
 
-sel <= func7(5) & func3;
+sel <= i_func7(5) & i_func3;
 
 
 with sel select Result_temp <=
@@ -155,21 +155,21 @@ with sel select Result_temp <=
 	x"00000000" when others;
 
 
-add_overflow<= (add_result(31) xor sr1(31)) or (func7(5) xnor sr1(31) xnor sr2(31));
-sub_overflow<= (sub_result(31) xor sr1(31)) or (func7(5) xnor sr1(31) xnor sr2(31));
+add_overflow<= (add_result(31) xor i_sr1(31)) or (i_func7(5) xnor i_sr1(31) xnor i_sr2(31));
+sub_overflow<= (sub_result(31) xor i_sr1(31)) or (i_func7(5) xnor i_sr1(31) xnor i_sr2(31));
 
-Result<= Result_temp;
-N<= Result_temp(31);
+o_Result<= Result_temp;
+o_N<= Result_temp(31);
 
-Z<= '1' when Result_temp= x"00000000" else
+o_Z<= '1' when Result_temp= x"00000000" else
 	'0';	
 	
-with sel select V<=
+with sel select o_V<=
 	add_overflow when "0000",
 	sub_overflow when "1000",
 	'0' when others;
 	
-with sel select C<=
+with sel select o_C<=
 	add_carry when "0000",
 	sub_carry when "1000",
 	'0' when others;

@@ -31,10 +31,10 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity ADD is
 	generic(N: integer := 32);
-    Port ( sr1 : in  STD_LOGIC_VECTOR (N-1 downto 0);
-           sr2 : in  STD_LOGIC_VECTOR (N-1  downto 0);
-           sout : out  STD_LOGIC_VECTOR (N-1  downto 0);
-           cout : out  STD_LOGIC);
+    Port ( i_sr1 : in  STD_LOGIC_VECTOR (N-1 downto 0);
+           i_sr2 : in  STD_LOGIC_VECTOR (N-1  downto 0);
+           o_Sum : out  STD_LOGIC_VECTOR (N-1  downto 0);
+           o_Carry : out  STD_LOGIC);
 end ADD;
 architecture Behavioral of ADD is
 
@@ -42,8 +42,8 @@ signal sum: STD_LOGIC_VECTOR(N downto 0);
 	
 begin
 
-	sum <= ('0'& sr1) + ('0'& sr2);
-	sout   <= sum(N-1  downto 0);
-	cout<=sum(N);
+	sum <= ('0'& i_sr1) + ('0'& i_sr2);
+	o_Sum   <= sum(N-1  downto 0);
+	o_Carry<=sum(N);
 end Behavioral;
 

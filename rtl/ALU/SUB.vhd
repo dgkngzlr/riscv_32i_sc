@@ -32,10 +32,10 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity SUB is
 	generic(N: integer := 32);
-    Port ( sr1 : in  STD_LOGIC_VECTOR (N-1 downto 0);
-           sr2 : in  STD_LOGIC_VECTOR (N-1  downto 0);
-           sout : out  STD_LOGIC_VECTOR (N-1  downto 0);
-           cout : out  STD_LOGIC);
+    Port ( i_sr1 : in  STD_LOGIC_VECTOR (N-1 downto 0);
+           i_sr2 : in  STD_LOGIC_VECTOR (N-1  downto 0);
+           o_Sum : out  STD_LOGIC_VECTOR (N-1  downto 0);
+           o_Carry : out  STD_LOGIC);
 end SUB;
 architecture Behavioral of SUB is
 
@@ -43,11 +43,11 @@ signal result: STD_LOGIC_VECTOR(N downto 0);
 signal not_SR2: STD_LOGIC_VECTOR(N-1 downto 0);
 signal SR2_temp: STD_LOGIC_VECTOR(N-1 downto 0);
 begin
-	not_SR2<= not(sr2);
+	not_SR2<= not(i_sr2);
 	SR2_temp<= STD_LOGIC_VECTOR(unsigned(not_SR2) +1);
-	result <= ('0'& sr1) + ('0'& SR2_temp);
-	sout   <= result(N-1  downto 0);
-	cout<=result(N);
+	result <= ('0'& i_sr1) + ('0'& SR2_temp);
+	o_Sum   <= result(N-1  downto 0);
+	o_Carry<=result(N);
 
 end Behavioral;
 
