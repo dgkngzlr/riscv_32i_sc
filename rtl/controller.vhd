@@ -73,6 +73,17 @@ begin
 			o_MEMWrite<='0';
 			o_ALUSrc<='0';
 			o_RegWrite<='1';
+		when others =>
+			o_RegDst  <='0';
+			o_Branch  <='0';
+			o_MemRead <='0';
+			o_MemtoReg<='0';
+			o_ALUOp   <='0';
+			o_MEMWrite<='0';
+			o_ALUSrc  <='0';
+			o_RegWrite<='0';
+	
+			
 	end case;
 end process;
 end Behavioral;

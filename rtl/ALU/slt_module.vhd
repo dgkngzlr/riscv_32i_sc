@@ -51,7 +51,7 @@ signal and_result1,and_result2,and_result3: STD_LOGIC;
 signal sub_result:STD_LOGIC_VECTOR(N-1 downto 0);
 begin
 
-	subtractor: SUB port map(i_sr1,i_sr2,sub_result,sub_carry);
+	subtractor: SUB port map(i_sr1=>i_sr1,i_sr2=>i_sr2,o_Sum=>sub_result,o_Carry=>sub_carry);
 	diff_most<= sub_result(31);
 	and_result1<= (not i_sr1(31) and (not diff_most));
 	and_result2<= (not i_sr1(31)) and i_sr2(31);
