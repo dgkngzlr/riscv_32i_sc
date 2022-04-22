@@ -1,0 +1,36 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: G:/Xlinx_2016/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 4df49332099e45e89e88a949980a3580 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_test_behav xil_defaultlib.tb_top_test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.pc_reg [pc_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.pc_inc [pc_inc_default]
+Compiling architecture behavioral of entity xil_defaultlib.instruct_mem [instruct_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder [decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.controller [controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_file [reg_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU_control [alu_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADD [add_default]
+Compiling architecture behavioral of entity xil_defaultlib.SUB [sub_default]
+Compiling architecture behavioral of entity xil_defaultlib.SLL_op [sll_op_default]
+Compiling architecture behavioral of entity xil_defaultlib.slt_module [slt_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.sltu_module [sltu_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.xor_module [xor_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.srl_module [srl_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.or_module [or_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.and_module [and_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.sra_module [sra_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavior of entity xil_defaultlib.tb_top_test
+Built simulation snapshot tb_top_test_behav

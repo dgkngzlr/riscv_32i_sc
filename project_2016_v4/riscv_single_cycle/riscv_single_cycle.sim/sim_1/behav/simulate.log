@@ -1,0 +1,5 @@
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+Failure: Assertion violation
+Time: 210 ns  Iteration: 0  Process: /tb_top_test/stim_proc  File: C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sim_1/new/tb_top_test.vhd
+$finish called at time : 210 ns : File "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sim_1/new/tb_top_test.vhd" Line 83
