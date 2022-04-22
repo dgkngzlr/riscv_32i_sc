@@ -31,9 +31,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Decoder is
     Port ( i_instr : in  STD_LOGIC_VECTOR (31 downto 0);
-           o_r_reg1 : out  STD_LOGIC_VECTOR (4 downto 0);
-           o_r_reg2 : out  STD_LOGIC_VECTOR (4 downto 0);
-           o_wreg : out  STD_LOGIC_VECTOR (4 downto 0));
+		   o_funct7 : out  STD_LOGIC_VECTOR (6 downto 0);
+		   o_r_reg1 : out  STD_LOGIC_VECTOR (4 downto 0);
+		   o_r_reg2 : out  STD_LOGIC_VECTOR (4 downto 0);
+           o_funct3 : out  STD_LOGIC_VECTOR (2 downto 0);
+           o_wreg : out  STD_LOGIC_VECTOR (4 downto 0);
+           o_opcode : out  STD_LOGIC_VECTOR (6 downto 0));
 end Decoder;
 
 architecture Behavioral of Decoder is
@@ -54,9 +57,12 @@ funct3<= i_instr(14 downto 12);
 rd<= i_instr(11 downto 7);
 opcode<= i_instr(6 downto 0);
 
+o_funct7<=funct7;
 o_r_reg1<=rs2;
 o_r_reg2<=rs1;
+o_funct3<=funct3;
 o_wreg<=rd;
+o_opcode<=opcode;
 
 end Behavioral;
 
