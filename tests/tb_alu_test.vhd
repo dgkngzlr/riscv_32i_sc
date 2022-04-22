@@ -41,8 +41,7 @@ ARCHITECTURE behavior OF tb_alu_test IS
  
     COMPONENT ALU
     PORT(
-         i_func3 : IN  std_logic_vector(2 downto 0);
-         i_func7 : IN  std_logic_vector(6 downto 0);
+         i_op_sel : IN  std_logic_vector(3 downto 0);
          i_sr1 : IN  std_logic_vector(31 downto 0);
          i_sr2 : IN  std_logic_vector(31 downto 0);
          o_V : OUT  std_logic;
@@ -55,8 +54,7 @@ ARCHITECTURE behavior OF tb_alu_test IS
     
 
    --Inputs
-   signal i_func3 : std_logic_vector(2 downto 0) := (others => '0');
-   signal i_func7 : std_logic_vector(6 downto 0) := (others => '0');
+   signal i_op_sel :std_logic_vector(3 downto 0):= (others => '0');
    signal i_sr1 : std_logic_vector(31 downto 0) := (others => '0');
    signal i_sr2 : std_logic_vector(31 downto 0) := (others => '0');
 
@@ -75,8 +73,7 @@ BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: ALU PORT MAP (
-          i_func3 => i_func3,
-          i_func7 => i_func7,
+          i_op_sel => i_op_sel,
           i_sr1 => i_sr1,
           i_sr2 => i_sr2,
           o_V => o_V,
@@ -95,53 +92,43 @@ BEGIN
    begin		
       -- hold reset state for 100 ns.
       wait for 10 ns;
-	  i_func3<="000";
-	  i_func7<="0000000";
+	  i_op_sel<="0000";
 	  i_sr1<=x"00110011";
 	  i_sr2<=x"00110011";
       wait for 10 ns;
-	  i_func3<="000";
-	  i_func7<="0100000";
+	  i_op_sel<="0001";
 	  i_sr1<=x"00110011";
 	  i_sr2<=x"00110011";
       wait for 10 ns;
-	  i_func3<="001";
-	  i_func7<="0000000";
+	  i_op_sel<="0010";
 	  i_sr1<=x"FFF10011";
 	  i_sr2<=x"00000011";
       wait for 10 ns;
-	  i_func3<="010";
-	  i_func7<="0000000";
+	  i_op_sel<="0011";
 	  i_sr1<=x"FFFF0011";
 	  i_sr2<=x"FFFF0011";
       wait for 10 ns;
-	  i_func3<="000";
-	  i_func7<="0000000";
+	  i_op_sel<="0100";
 	  i_sr1<=x"80110011";
 	  i_sr2<=x"FF110011";
       wait for 10 ns;
-	  i_func3<="100";
-	  i_func7<="0000000";
+	  i_op_sel<="0101";
 	  i_sr1<=x"0FFFFFF1";
 	  i_sr2<=x"00100011";
       wait for 10 ns;
-	  i_func3<="101";
-	  i_func7<="0000000";
+	  i_op_sel<="0110";
 	  i_sr1<=x"7FFFFFFF";
 	  i_sr2<=x"7FFFFFFF";
       wait for 10 ns;
-	  i_func3<="110";
-	  i_func7<="0000000";
+	  i_op_sel<="0111";
 	  i_sr1<=x"80000000";
 	  i_sr2<=x"00110011";
       wait for 10 ns;
-	  i_func3<="111";
-	  i_func7<="0000000";
+	  i_op_sel<="1000";
 	  i_sr1<=x"7FFFFFFF";
 	  i_sr2<=x"80000000";
       wait for 10 ns;
-	  i_func3<="000";
-	  i_func7<="0100000";
+	  i_op_sel<="1001";
 	  i_sr1<=x"80000000";
 	  i_sr2<=x"7FFFFFFF";
 

@@ -31,8 +31,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity ALU is
-    Port ( i_func3 : in  STD_LOGIC_VECTOR (2 downto 0);
-		   i_func7 : in  STD_LOGIC_VECTOR (6 downto 0);
+    Port ( i_op_sel : in  STD_LOGIC_VECTOR (3 downto 0);
            i_sr1 : in  STD_LOGIC_VECTOR (31 downto 0);
            i_sr2 : in  STD_LOGIC_VECTOR (31 downto 0);
 		   o_V: out STD_LOGIC;
@@ -138,7 +137,7 @@ and_module1: and_module port map(i_sr1=>i_sr1,i_sr2=>i_sr2, o_Result=> and_resul
 
 sra_module1: sra_module port map(i_sr1=>i_sr1,i_sr2=>i_sr2(4 downto 0),o_Result=> sra_result);
 
-sel <= i_func7(5) & i_func3;
+sel <= i_op_sel;
 
 
 with sel select Result_temp <=
@@ -155,8 +154,8 @@ with sel select Result_temp <=
 	x"00000000" when others;
 
 
-add_overflow<= (add_result(31) xor i_sr1(31)) or (i_func7(5) xnor i_sr1(31) xnor i_sr2(31));
-sub_overflow<= (sub_result(31) xor i_sr1(31)) or (i_func7(5) xnor i_sr1(31) xnor i_sr2(31));
+add_overflow<= (add_result(31) xor i_sr1(31)) or (sel(3) xnor i_sr1(31) xnor i_sr2(31));
+sub_overflow<= (sub_result(31) xor i_sr1(31)) or (sel(3) xnor i_sr1(31) xnor i_sr2(31));
 
 o_Result<= Result_temp;
 o_N<= Result_temp(31);
