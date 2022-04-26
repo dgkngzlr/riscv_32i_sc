@@ -1,3 +1,5 @@
 https://github.com/Charlie5DH/RISC-V-Single-Cycle-uP/blob/master/My_RISCV/Instruction_Mem.vhd  //For Instruction Memory
+
 https://msyksphinz-self.github.io/riscv-isadoc/html/index.html // Instructions list
+
 https://varshaaks.wordpress.com/2021/07/19/rv32i-base-integer-instruction-set/ // instruction format
