@@ -32,23 +32,37 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity sign_extend is
-    Port ( i_imm : in STD_LOGIC_VECTOR (11 downto 0);
+    Port ( i_imm : in STD_LOGIC_VECTOR (24 downto 0);
+		   i_sel: in STD_LOGIC_VECTOR (1 downto 0);
            o_imm : out STD_LOGIC_VECTOR (31 downto 0));
 end sign_extend;
 
 architecture Behavioral of sign_extend is
 
 signal imm_temp: STD_LOGIC_VECTOR (31 downto 0);
-signal sign_temp: STD_LOGIC;
 
+signal reg_imm_sign_temp: STD_LOGIC;
+
+signal reg_imm_temp: STD_LOGIC_VECTOR (11 downto 0);
+
+signal reg_imm_extended: STD_LOGIC_VECTOR (31 downto 0);
 begin
 
-sign_temp<= i_imm(11);
 
-imm_temp(31 downto 12)<=( others =>sign_temp );
 
-imm_temp(11 downto 0)<=i_imm;
+reg_imm_temp<= i_imm(24 downto 13);
 
+reg_imm_sign_temp<= reg_imm_temp(11);
+
+reg_imm_extended(11 downto 0) <= reg_imm_temp;
+
+reg_imm_extended(31 downto 12)<=( others =>reg_imm_sign_temp);
+
+
+with i_sel select
+	imm_temp<= reg_imm_extended when "00",
+				x"00000000" when others;
+		   
 o_imm<=imm_temp;
 
 end Behavioral;

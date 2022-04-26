@@ -51,8 +51,8 @@ process(i_sr1,i_sr2)
 			result_temp<='0';
 		end if;
 end process;
-o_Result(30 downto 0)<=x"0000000"&"000";
-o_Result(31)<= result_temp;
+o_Result(31 downto 1)<=x"0000000"&"000";
+o_Result(0)<= result_temp;
 
 end Behavioral;
 

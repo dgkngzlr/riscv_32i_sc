@@ -47,10 +47,13 @@ signal dec_funct7: STD_LOGIC_VECTOR(6 downto 0);
 signal dec_funct3: STD_LOGIC_VECTOR(2 downto 0);
 signal dec_opcode: STD_LOGIC_VECTOR(6 downto 0);
 signal con_RegDst, con_Branch, con_MemRead ,con_MemtoReg,con_ALUOp , con_MEMWrite , con_ALUSrc  , con_RegWrite : STD_LOGIC;
+signal con_ImmSrc: STD_LOGIC_VECTOR(1 downto 0);
 signal reg_file_data1, reg_file_data2:STD_LOGIC_VECTOR(31 downto 0);
 signal alu_control_sel: STD_LOGIC_VECTOR(3 downto 0):="1111";
 signal alu_result:STD_LOGIC_VECTOR(31 downto 0);
 signal flag_C,flag_V, flag_N, flag_Z: STD_LOGIC;
+signal sig_ex_out :STD_LOGIC_VECTOR(31 downto 0);
+signal alu_src_mux_out: STD_LOGIC_VECTOR(31 downto 0);
 
 component ALU is
     Port ( i_op_sel : in  STD_LOGIC_VECTOR (3 downto 0);
@@ -82,6 +85,7 @@ end component;
 
 component controller is
     Port ( i_opcode : in  STD_LOGIC_VECTOR (6 downto 0);
+		   o_ImmSrc: out STD_LOGIC_VECTOR (1 downto 0);
 		   o_RegDst : out  STD_LOGIC;
            o_Branch : out  STD_LOGIC;
 		   o_MemRead : out  STD_LOGIC;
@@ -129,6 +133,20 @@ component reg_file is
 	
 end component;
 
+component sign_extend is
+    Port ( i_imm : in STD_LOGIC_VECTOR (24 downto 0);
+		   i_sel: in STD_LOGIC_VECTOR (1 downto 0);
+           o_imm : out STD_LOGIC_VECTOR (31 downto 0));
+end component;
+
+component alu_src_mux is
+    Port ( i_AluSrc : in STD_LOGIC;
+           i_rs2 : in STD_LOGIC_VECTOR (31 downto 0);
+           i_imm : in STD_LOGIC_VECTOR (31 downto 0);
+           o_reg : out STD_LOGIC_VECTOR (31 downto 0));
+end component;
+
+
 begin
 
 PC_reg1: pc_reg port map(i_clk=>i_clk,i_rst=>i_rst, i_addr=>pc_inc_output ,o_addr=>pc_reg_output);
@@ -144,8 +162,15 @@ decoder1: Decoder port map(i_instr=>ins_mem_output,
 						   o_funct3=>dec_funct3,
 						   o_wreg=>dec_wreg,
 						   o_opcode=>dec_opcode);
-						   
+	
+sign_extend1: sign_extend port map(i_imm=>ins_mem_output(31 downto 7),
+								   i_sel=> con_ImmSrc,
+						           o_imm=>sig_ex_out
+						   );
+
+	
 controller1:controller port map(i_opcode=>dec_opcode,
+								o_ImmSrc=>con_ImmSrc,
 								o_RegDst=>con_RegDst, 
 								o_Branch=>con_Branch, 
 								o_MemRead=>con_MemRead, 
@@ -168,14 +193,20 @@ alu_control1: ALU_control port map(i_ALU_op=>con_ALUOp,
 								   i_func7=>dec_funct7,		
 								   i_func3=>dec_funct3,
 								   o_op_sel=>alu_control_sel);		
+
+alu_src_mux1: alu_src_mux port map( i_AluSrc => con_ALUSrc,
+								    i_rs2 =>reg_file_data2,
+								    i_imm => sig_ex_out,
+								    o_reg => alu_src_mux_out);
 	
 alu1: 	ALU port map(i_op_sel=>alu_control_sel,
 					 i_sr1=>reg_file_data1,
-					 i_sr2=>reg_file_data2,
+					 i_sr2=>alu_src_mux_out,
 					 o_V=>flag_V,
 					 o_N=>flag_N,
 					 o_Z=>flag_Z,
 					 o_C=>flag_C,
 					 o_Result=>alu_result);
+					 
 					 
 end Behavioral;
