@@ -79,7 +79,7 @@ BEGIN
 	  i_rst<='1';
       wait for 10 ns;	
 	  i_rst<='0';
-      wait for i_clk_period*20;
+      wait for i_clk_period*25;
       assert false severity failure;
       -- insert stimulus here 
 

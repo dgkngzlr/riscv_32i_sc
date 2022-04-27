@@ -31,8 +31,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity controller is
     Port ( i_opcode : in  STD_LOGIC_VECTOR (6 downto 0);
+		   i_Zero   : in STD_LOGIC;
+		   o_ImmSrc: out STD_LOGIC_VECTOR (1 downto 0);
 		   o_RegDst : out  STD_LOGIC;
-           o_Branch : out  STD_LOGIC;
+           o_PCSrc : out  STD_LOGIC;
 		   o_MemRead : out  STD_LOGIC;
            o_MemtoReg : out  STD_LOGIC;
 		   o_ALUOp : out  STD_LOGIC;
@@ -43,20 +45,24 @@ end controller;
 
 architecture Behavioral of controller is
 
+signal Branch, Jump: STD_LOGIC;
+
 begin
 process(i_opcode)
 begin
 	o_RegDst  <='0';
-	o_Branch  <='0';
+	o_PCSrc  <='0';
     o_MemRead <='0';
     o_MemtoReg<='0';
     o_ALUOp   <='0';
     o_MEMWrite<='0';
     o_ALUSrc  <='0';
     o_RegWrite<='0';
-	
+	o_ImmSrc<="11";
+	Branch<='0';
+	Jump<='0';
 	case i_opcode is
-	   when "0010011" =>--immediate ALU
+	   when "0010011" =>--I type ALU
 		
 		    o_RegDst<='1';
 			o_MemRead<='0';
@@ -65,7 +71,8 @@ begin
 			o_MEMWrite<='0';
 			o_ALUSrc<='1';
 			o_RegWrite<='1';
-	   when "0110011" =>-- ALU
+			o_ImmSrc<="00";
+	   when "0110011" =>-- R type ALU
 			o_RegDst<='0';
 			o_MemRead<='0';
 			o_MemtoReg<='1';
@@ -73,15 +80,27 @@ begin
 			o_MEMWrite<='0';
 			o_ALUSrc<='0';
 			o_RegWrite<='1';
+			o_ImmSrc<="11";
+	   when "0000011" =>-- lw type 
+			o_RegDst<='0';
+			o_MemRead<='0';
+			o_MemtoReg<='1';
+			o_ALUOp<='1';
+			o_MEMWrite<='0';
+			o_ALUSrc<='0';
+			o_RegWrite<='1';
+			o_ImmSrc<="11";
+		
 		when others =>
 			o_RegDst  <='0';
-			o_Branch  <='0';
+			o_PCSrc  <='0';
 			o_MemRead <='0';
 			o_MemtoReg<='0';
 			o_ALUOp   <='0';
 			o_MEMWrite<='0';
 			o_ALUSrc  <='0';
 			o_RegWrite<='0';
+			o_ImmSrc<="11";
 	
 			
 	end case;
