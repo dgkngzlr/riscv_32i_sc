@@ -41,12 +41,14 @@ end top;
 architecture Behavioral of top is
 
 signal pc_reg_output,pc_inc_output: STD_LOGIC_VECTOR(31 downto 0);
+signal pc_target_reg: STD_LOGIC_VECTOR(31 downto 0);
+signal pc_src_mux_out: STD_LOGIC_VECTOR(31 downto 0);
 signal ins_mem_output: STD_LOGIC_VECTOR(31 downto 0);
 signal dec_rs2,dec_rs1,dec_wreg: STD_LOGIC_VECTOR(4 downto 0);
 signal dec_funct7: STD_LOGIC_VECTOR(6 downto 0);
 signal dec_funct3: STD_LOGIC_VECTOR(2 downto 0);
 signal dec_opcode: STD_LOGIC_VECTOR(6 downto 0);
-signal con_RegDst, con_Branch, con_MemRead ,con_MemtoReg,con_ALUOp , con_MEMWrite , con_ALUSrc  , con_RegWrite : STD_LOGIC;
+signal con_RegDst, con_PCSrc, con_MemRead ,con_MemtoReg,con_ALUOp , con_MEMWrite , con_ALUSrc  , con_RegWrite : STD_LOGIC;
 signal con_ImmSrc: STD_LOGIC_VECTOR(1 downto 0);
 signal reg_file_data1, reg_file_data2:STD_LOGIC_VECTOR(31 downto 0);
 signal alu_control_sel: STD_LOGIC_VECTOR(3 downto 0):="1111";
@@ -87,7 +89,7 @@ component controller is
     Port ( i_opcode : in  STD_LOGIC_VECTOR (6 downto 0);
 		   o_ImmSrc: out STD_LOGIC_VECTOR (1 downto 0);
 		   o_RegDst : out  STD_LOGIC;
-           o_Branch : out  STD_LOGIC;
+           o_PCSrc : out  STD_LOGIC;
 		   o_MemRead : out  STD_LOGIC;
            o_MemtoReg : out  STD_LOGIC;
 		   o_ALUOp : out  STD_LOGIC;
@@ -146,14 +148,36 @@ component alu_src_mux is
            o_reg : out STD_LOGIC_VECTOR (31 downto 0));
 end component;
 
+component PC_target is
+    Port ( i_data : in STD_LOGIC_VECTOR (31 downto 0);
+           i_extended : in STD_LOGIC_VECTOR (31 downto 0);
+           o_pctarget : out STD_LOGIC_VECTOR (31 downto 0));
+end component;
+
+component PC_src_mux is
+    Port ( i_pc_src: in STD_LOGIC;
+		   i_in1 : in STD_LOGIC_VECTOR (31 downto 0);
+           i_in2 : in STD_LOGIC_VECTOR (31 downto 0);
+           o_muxout : out STD_LOGIC_VECTOR (31 downto 0));
+end component;
 
 begin
 
-PC_reg1: pc_reg port map(i_clk=>i_clk,i_rst=>i_rst, i_addr=>pc_inc_output ,o_addr=>pc_reg_output);
+PC_reg1: pc_reg port map(i_clk=>i_clk,
+					     i_rst=>i_rst, 
+						 i_addr=>pc_inc_output ,
+						 o_addr=>pc_reg_output);
 
-PC_inc1: pc_inc port map(i_data=>pc_reg_output,o_data=>pc_inc_output);
+PC_inc1: pc_inc port map(i_data=>pc_reg_output,
+						 o_data=>pc_inc_output);
 
-ins_mem1:instruct_mem port map(i_addr=>pc_reg_output,o_data=>ins_mem_output);
+PC_target1: PC_target port map(i_data=>pc_reg_output, 
+							   i_extended=>sig_ex_out, 
+							   o_pctarget=> pc_target_reg);
+
+PC_src_mux1: PC_src_mux port map(i_pc_src=>con_PCSrc, i_in1=>pc_inc_output,i_in2=> pc_target_reg,o_muxout=> pc_src_mux_out );
+
+ins_mem1:instruct_mem port map(i_addr=>pc_src_mux_out ,o_data=>ins_mem_output);
 
 decoder1: Decoder port map(i_instr=>ins_mem_output,
 						   o_funct7=>dec_funct7,
@@ -172,7 +196,7 @@ sign_extend1: sign_extend port map(i_imm=>ins_mem_output(31 downto 7),
 controller1:controller port map(i_opcode=>dec_opcode,
 								o_ImmSrc=>con_ImmSrc,
 								o_RegDst=>con_RegDst, 
-								o_Branch=>con_Branch, 
+								o_PCSrc=>con_PCSrc, 
 								o_MemRead=>con_MemRead, 
 								o_MemtoReg=>con_MemtoReg, 
 								o_ALUOp=>con_ALUOp, 

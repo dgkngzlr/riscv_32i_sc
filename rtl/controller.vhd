@@ -33,7 +33,7 @@ entity controller is
     Port ( i_opcode : in  STD_LOGIC_VECTOR (6 downto 0);
 		   o_ImmSrc: out STD_LOGIC_VECTOR (1 downto 0);
 		   o_RegDst : out  STD_LOGIC;
-           o_Branch : out  STD_LOGIC;
+           o_PCSrc : out  STD_LOGIC;
 		   o_MemRead : out  STD_LOGIC;
            o_MemtoReg : out  STD_LOGIC;
 		   o_ALUOp : out  STD_LOGIC;
@@ -48,7 +48,7 @@ begin
 process(i_opcode)
 begin
 	o_RegDst  <='0';
-	o_Branch  <='0';
+	o_PCSrc  <='0';
     o_MemRead <='0';
     o_MemtoReg<='0';
     o_ALUOp   <='0';
@@ -78,7 +78,7 @@ begin
 			o_ImmSrc<="11";
 		when others =>
 			o_RegDst  <='0';
-			o_Branch  <='0';
+			o_PCSrc  <='0';
 			o_MemRead <='0';
 			o_MemtoReg<='0';
 			o_ALUOp   <='0';
