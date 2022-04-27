@@ -3,3 +3,5 @@ https://github.com/Charlie5DH/RISC-V-Single-Cycle-uP/blob/master/My_RISCV/Instru
 https://msyksphinz-self.github.io/riscv-isadoc/html/index.html // Instructions list
 
 https://varshaaks.wordpress.com/2021/07/19/rv32i-base-integer-instruction-set/ // instruction format
+
+https://github.com/Kritagya-Agarwal/Assembly-To-Machine-Code-RISC-V // assembly to machine code generator
