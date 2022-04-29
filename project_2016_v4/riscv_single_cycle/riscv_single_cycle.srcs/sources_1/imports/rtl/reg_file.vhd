@@ -47,7 +47,7 @@ end reg_file;
 architecture Behavioral of reg_file is
 	-- 32x32 register file structure 
 	type array_t is array (31 downto 0) of std_logic_vector(31 downto 0);
-	signal register_file : array_t := ( others =>x"00000001" );
+	signal register_file : array_t := ( others =>x"00000002" );
 begin
 
 -- Writes the data to the register at rising edge of the clock.

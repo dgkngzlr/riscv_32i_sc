@@ -1,25 +1,27 @@
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/SUB.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity SUB
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/SLL.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity SLL_op
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/sra_module.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity sra_module
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/or_module.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity or_module
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/ADD.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity ADD
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/srl_module.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity srl_module
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/sltu_module.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity sltu_module
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/and_module.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity and_module
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/slt_module.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity slt_module
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/xor_module.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity xor_module
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/reg_file.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity reg_file
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/srl_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity srl_module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/sra_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sra_module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/slt_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity slt_module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/sltu_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sltu_module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/SLL.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SLL_op
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/or_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity or_module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/and_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity and_module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ADD
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/sign_extend.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sign_extend
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/pc_reg.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity pc_reg
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/pc_inc.vhd" into library xil_defaultlib
@@ -30,11 +32,11 @@ INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_s
 INFO: [VRFC 10-307] analyzing entity Decoder
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/alu_src_mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_src_mux
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU_control.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity ALU_control
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/ALU.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity ALU
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity top
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sim_1/new/tb_top_test.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity tb_top_test
