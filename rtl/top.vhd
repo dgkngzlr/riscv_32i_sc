@@ -48,8 +48,8 @@ signal dec_rs2,dec_rs1,dec_wreg: STD_LOGIC_VECTOR(4 downto 0);
 signal dec_funct7: STD_LOGIC_VECTOR(6 downto 0);
 signal dec_funct3: STD_LOGIC_VECTOR(2 downto 0);
 signal dec_opcode: STD_LOGIC_VECTOR(6 downto 0);
-signal con_RegDst, con_PCSrc, con_MemRead ,con_MemtoReg,con_ALUOp , con_MEMWrite , con_ALUSrc  , con_RegWrite : STD_LOGIC;
-signal con_ImmSrc: STD_LOGIC_VECTOR(1 downto 0);
+signal con_RegWrite, con_PCSrc, con_MemWrite ,con_ALUSrc: STD_LOGIC;
+signal con_ImmSrc,con_ResultSrc,con_ALUOp: STD_LOGIC_VECTOR(1 downto 0);
 signal reg_file_data1, reg_file_data2:STD_LOGIC_VECTOR(31 downto 0);
 signal alu_control_sel: STD_LOGIC_VECTOR(3 downto 0):="1111";
 signal alu_result:STD_LOGIC_VECTOR(31 downto 0);
@@ -69,7 +69,7 @@ component ALU is
 end component;
 
 component ALU_control is
-    Port ( i_ALU_op : in  STD_LOGIC;
+    Port ( i_ALU_op : in  STD_LOGIC_VECTOR(1 downto 0);
            i_func7 : in  STD_LOGIC_VECTOR (6 downto 0);
            i_func3 : in  STD_LOGIC_VECTOR (2 downto 0);
            o_op_sel : out  STD_LOGIC_VECTOR (3 downto 0));
@@ -87,14 +87,13 @@ end component;
 
 component controller is
     Port ( i_opcode : in  STD_LOGIC_VECTOR (6 downto 0);
-		   o_ImmSrc: out STD_LOGIC_VECTOR (1 downto 0);
-		   o_RegDst : out  STD_LOGIC;
-           o_PCSrc : out  STD_LOGIC;
-		   o_MemRead : out  STD_LOGIC;
-           o_MemtoReg : out  STD_LOGIC;
-		   o_ALUOp : out  STD_LOGIC;
-           o_MEMWrite : out  STD_LOGIC;
+		   i_Zero   : in STD_LOGIC;
+		   o_PCSrc: out STD_LOGIC;
+		   o_ResultSrc : out  STD_LOGIC_VECTOR (1 downto 0);
+           o_MemWrite : out  STD_LOGIC;
 		   o_ALUSrc : out  STD_LOGIC;
+           o_ImmSrc : out  STD_LOGIC_VECTOR (1 downto 0);
+		   o_ALUOp : out  STD_LOGIC_VECTOR(1 downto 0);
            o_RegWrite : out  STD_LOGIC);
 end component;
 
@@ -194,14 +193,13 @@ sign_extend1: sign_extend port map(i_imm=>ins_mem_output(31 downto 7),
 
 	
 controller1:controller port map(i_opcode=>dec_opcode,
-								o_ImmSrc=>con_ImmSrc,
-								o_RegDst=>con_RegDst, 
-								o_PCSrc=>con_PCSrc, 
-								o_MemRead=>con_MemRead, 
-								o_MemtoReg=>con_MemtoReg, 
+								i_Zero=>flag_Z,
+								o_PCSrc=>con_PCSrc,
+								o_ResultSrc=>con_ResultSrc, 
+								o_MemWrite=>con_MEMWrite, 
+								o_ALUSrc=>con_AluSrc, 
+								o_ImmSrc=>con_ImmSrc, 
 								o_ALUOp=>con_ALUOp, 
-								o_MEMWrite=>con_MEMWrite, 
-								o_ALUSrc=>con_ALUSrc, 
 								o_RegWrite=>con_RegWrite);
 								
 reg_file1:reg_file port map(i_clk=>i_clk,
