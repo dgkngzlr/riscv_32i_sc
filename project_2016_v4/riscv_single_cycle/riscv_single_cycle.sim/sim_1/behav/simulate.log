@@ -1,5 +1,7 @@
 Vivado Simulator 2016.4
 Time resolution is 1 ps
-Failure: Assertion violation
-Time: 260 ns  Iteration: 0  Process: /tb_top_test/stim_proc  File: C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sim_1/new/tb_top_test.vhd
-$finish called at time : 260 ns : File "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sim_1/new/tb_top_test.vhd" Line 83
+ERROR: Index 256 out of bound 255 downto 0
+Time: 25 ns  Iteration: 16  Process: /tb_top_test/uut/data_mem1/line__64
+  File: C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/data_mem.vhd
+
+HDL Line: C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/data_mem.vhd:64
