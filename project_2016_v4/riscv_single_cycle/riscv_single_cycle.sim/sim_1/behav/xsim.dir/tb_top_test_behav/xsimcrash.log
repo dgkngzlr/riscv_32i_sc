@@ -1,41 +1,39 @@
-Unable to capture context for thread 19976 in process 8452, can not generate back trace
-Unable to capture context for thread 23884 in process 8452, can not generate back trace
-Unable to capture context for thread 2508 in process 8452, can not generate back trace
-Exception at PC 0x00007FFEB4544F69
-Unable to capture context for thread 5000 in process 8452, can not generate back trace
-Exception at PC 0x00007FFDFBF7BB93
+Unable to capture context for thread 21176 in process 23200, can not generate back trace
+Unable to capture context for thread 24840 in process 23200, can not generate back trace
+Unable to capture context for thread 25036 in process 23200, can not generate back trace
+Exception at PC 0x00007FF87622BB93
 Printing stacktrace...
 
-Unable to capture context for thread 5000 in process 8452, can not generate back trace
-Exception at PC 0x00007FFEB4544F69
-Exception at PC 0x00007FFEB4544F69
-Exception at PC 0x00007FFEB4544F69
-Exception at PC 0x00007FFEB4544F69
-Exception at PC 0x00007FFEB4544F69
-Exception at PC 0x00007FFEB4544F69
-Exception at PC 0x00007FFEB4544F69
-Exception at PC 0x00007FFEB4544F69
-[0]  [0x00007FFDFBF7BB93]
-[1]  [0x00007FFDFBF7BB93]
-[2]  [0x00007FFDFBF7B4A1]
-[3]  [0x00007FFDFBF7B3EF]
-[4]  [0x00007FFDFBF619FE]
-[5]  [0x00007FFDFBF60ED1]
-[6]  [0x00007FFDFBF60D76]
-[7]  [0x00007FFDFBF079F6]
-[8]  [0x00007FFDFBEF7AFB]
-[9]  [0x00007FFDFC01E90A]
-[10]  [0x00007FFDFC039F87]
-[11]  [0x00007FFDFC03A05F]
-[12] (BaseThreadInitThunk+0x14) [0x00007FFEB4E27034]
-[13] (RtlUserThreadStart+0x21) [0x00007FFEB6822651]
+Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FF8E5F84F69
+[0]  [0x00007FF87622BB93]
+[1]  [0x00007FF87622BB93]
+[2]  [0x00007FF87622B4A1]
+[3]  [0x00007FF87622B3EF]
+[4]  [0x00007FF8762119FE]
+[5]  [0x00007FF876210ED1]
+[6]  [0x00007FF876210D76]
+[7]  [0x00007FF8761B79F6]
+[8]  [0x00007FF8761A7AFB]
+[9]  [0x00007FF8762CE90A]
+[10]  [0x00007FF8762E9F87]
+[11]  [0x00007FF8762EA05F]
+[12] (BaseThreadInitThunk+0x14) [0x00007FF8E71C7034]
+[13] (RtlUserThreadStart+0x21) [0x00007FF8E83C2651]
 Done
-Exception at PC 0x00007FFEB4544F69
-Exception at PC 0x00007FFEB4544F69
-Exception at PC 0x00007FFEB4544F69
-Exception at PC 0x00007FFEB4544F69
-Exception at PC 0x00007FFEB4544F69
-Exception at PC 0x00007FFEB4544F69
-Exception at PC 0x00007FFEB4544F69
-Exception at PC 0x00007FFEB4544F69
-Exception at PC 0x00007FFEB4544F69
+Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FF8E5F84F69

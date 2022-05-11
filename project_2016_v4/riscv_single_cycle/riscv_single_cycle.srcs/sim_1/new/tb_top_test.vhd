@@ -76,10 +76,12 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
+	  wait for i_clk_period/2;
 	  i_rst<='1';
       wait for 10 ns;	
 	  i_rst<='0';
-      wait for i_clk_period*25;
+
+      wait for i_clk_period*28;
       assert false severity failure;
       -- insert stimulus here 
 

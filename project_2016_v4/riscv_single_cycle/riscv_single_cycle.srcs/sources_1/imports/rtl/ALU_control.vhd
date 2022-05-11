@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity ALU_control is
-    Port ( i_ALU_op : in  STD_LOGIC;
+    Port ( i_ALU_op : in  STD_LOGIC_VECTOR(1 downto 0);
            i_func7 : in  STD_LOGIC_VECTOR (6 downto 0);
            i_func3 : in  STD_LOGIC_VECTOR (2 downto 0);
            o_op_sel : out  STD_LOGIC_VECTOR (3 downto 0));
@@ -42,8 +42,10 @@ begin
 
 sel <= i_func7(5) & i_func3;
 
-o_op_sel<= sel when i_ALU_op='1' else
-		   "1111";	
+o_op_sel<= "0000" when i_ALU_op="00" else
+		   "1000" when i_ALU_op="01" else
+		   sel when i_ALU_op="10" else
+		   "1111";
 
 end Behavioral;
 
