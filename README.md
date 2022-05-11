@@ -6,7 +6,7 @@ RISC V is an open-source Load-Store architecture-based ISA which, supported by m
 The open-source nature of this RISCV architecture paves the way for improvements to the architecture's instruction set and can adapt to various security needs. The 32-bit processor using the RISCV instruction set architecture will be developed in line with the advantages of open source of micro-architecture which are mentioned slightly above. We will design and develop our custom system in the hardware side at VHDL-level. Our custom RISC-V system will be developed and implemented on ZedBoard development card. The performance tests of the developed processor will be done with the benchmark applications that are currently used as common. 
 
 
-## Feature Work   ✨ 
+## Feature Work   :sparkles:
 
 - Development of multi-cycle processor
 - Development of pipelined processor 
