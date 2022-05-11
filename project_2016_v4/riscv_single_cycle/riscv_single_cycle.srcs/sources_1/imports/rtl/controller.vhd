@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity controller is
-    Port ( i_opcode : in  	 (6 downto 0);
+    Port ( i_opcode : in  STD_LOGIC_VECTOR	 (6 downto 0);
 		   i_Zero   : in STD_LOGIC;
 		   o_PCSrc: out STD_LOGIC;
 		   o_ResultSrc : out  STD_LOGIC_VECTOR (1 downto 0);
