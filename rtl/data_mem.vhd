@@ -42,10 +42,10 @@ end data_mem;
 architecture Behavioral of data_mem is
 
 	-- 256 Byte (256x8) little endian memory implementation for data memory
-	type array_t is array (2**8 downto 0) of std_logic_vector(7 downto 0);
+	type array_t is array (2**8-1 downto 0) of std_logic_vector(7 downto 0);
 	signal mem : array_t := ( others =>x"00" );
 	
-	signal addr_resized : std_logic_vector(7 downto 0) := (others => '0');
+	signal addr_resized : std_logic_vector(8 downto 0) := (others => '0');
 begin
 
 process(i_clk)
@@ -60,7 +60,7 @@ begin
 	end if;
 end process;
 
-addr_resized <= i_addr(7 downto 0); 	
+addr_resized <= '0' & i_addr(7 downto 0); 	
 o_rdata <= mem(to_integer(unsigned(addr_resized))+3) &
 		   mem(to_integer(unsigned(addr_resized))+2) &
 		   mem(to_integer(unsigned(addr_resized))+1) &
