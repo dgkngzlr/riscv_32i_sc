@@ -37,7 +37,6 @@ port(
 end instruct_mem;
 
 architecture Behavioral of instruct_mem is
-
 begin
 process(i_addr)
 begin

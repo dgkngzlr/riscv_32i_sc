@@ -1,0 +1,7 @@
+1-ALU CHECKED
+2-Register File CHECKED
+3-Controller    WAITING
+4-Decoder	WAITING
+5-PC_INC, PC-REG	WAITING
+6- Sign Extend	WAITING
+7-Data_Mem, Inst_mem	WAITING
