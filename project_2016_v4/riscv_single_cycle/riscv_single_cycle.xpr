@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.xpr">
+<Project Version="7" Minor="17" Path="C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="4df49332099e45e89e88a949980a3580"/>
@@ -30,7 +30,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="zed"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="114"/>
+    <Option Name="WTXSimLaunchSim" Val="116"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -57,6 +57,38 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Desktop/riscv/riscv_32i_sc/rtl/ALU/SUB.vhd"/>
           <Attr Name="ImportTime" Val="1650302076"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/Desktop/priority.vhdl">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/imports/Desktop/priority.vhdl"/>
+          <Attr Name="ImportTime" Val="1654970655"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/Desktop/mult.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/imports/Desktop/mult.vhd"/>
+          <Attr Name="ImportTime" Val="1654870191"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/Desktop/div.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/imports/Desktop/div.vhd"/>
+          <Attr Name="ImportTime" Val="1654956328"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/dict.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/new/dict.vhd"/>
+          <Attr Name="ImportTime" Val="1654953163"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -139,19 +171,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/data_mem.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/PC_target.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/PC_src_mux.vhd">
+      <File Path="$PSRCDIR/sources_1/new/sign_extend.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -165,15 +185,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/ALU/ALU.vhd">
+      <File Path="$PSRCDIR/sources_1/new/PC_target.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Desktop/riscv/riscv_32i_sc/rtl/ALU/ALU.vhd"/>
-          <Attr Name="ImportTime" Val="1650639502"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/sign_extend.vhd">
+      <File Path="$PSRCDIR/sources_1/new/PC_src_mux.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -211,10 +229,24 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/data_mem.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/controller.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Desktop/riscv/riscv_32i_sc/rtl/controller.vhd"/>
           <Attr Name="ImportTime" Val="1650645048"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/barret_top.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/new/barret_top.vhd"/>
+          <Attr Name="ImportTime" Val="1654970284"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -229,6 +261,14 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Desktop/riscv/riscv_32i_sc/rtl/ALU_control.vhd"/>
           <Attr Name="ImportTime" Val="1650639061"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/ALU/ALU.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Desktop/riscv/riscv_32i_sc/rtl/ALU/ALU.vhd"/>
+          <Attr Name="ImportTime" Val="1650639502"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -266,6 +306,15 @@
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../riscv/riscv_32i_sc/tests/tb_alu_test.vhd"/>
           <Attr Name="ImportTime" Val="1651265925"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/new/tb_barret.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sim_1/new/tb_barret.vhd"/>
+          <Attr Name="ImportTime" Val="1654971868"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

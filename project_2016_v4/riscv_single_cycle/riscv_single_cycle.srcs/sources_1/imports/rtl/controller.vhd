@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity controller is
-    Port ( i_opcode : in  STD_LOGIC_VECTOR	 (6 downto 0);
+    Port ( i_opcode : in  STD_LOGIC_VECTOR (6 downto 0);
 		   i_Zero   : in STD_LOGIC;
 		   o_PCSrc: out STD_LOGIC;
 		   o_ResultSrc : out  STD_LOGIC_VECTOR (1 downto 0);
@@ -38,12 +38,13 @@ entity controller is
 		   o_ALUSrc : out  STD_LOGIC;
            o_ImmSrc : out  STD_LOGIC_VECTOR (1 downto 0);
 		   o_ALUOp : out  STD_LOGIC_VECTOR(1 downto 0);
-           o_RegWrite : out  STD_LOGIC);
+           o_RegWrite : out  STD_LOGIC;
+		   o_stall : out STD_LOGIC);
 end controller;
 
 architecture Behavioral of controller is
 
-signal sig_Branch, sig_Jump,sig_PCSrc, sig_MemWrite,sig_ALUSrc,sig_RegWrite: STD_LOGIC;
+signal sig_Branch, sig_Jump,sig_PCSrc, sig_MemWrite,sig_ALUSrc,sig_RegWrite,sig_stall: STD_LOGIC;
 signal sig_ResultSrc, sig_ImmSrc,sig_ALUOp: STD_LOGIC_VECTOR(1 downto 0);
 signal ResultAnd,ResultOr:STD_LOGIC;
 
@@ -59,7 +60,7 @@ begin
     sig_RegWrite<='0';
 	sig_Branch<='0';
 	sig_Jump<='0';
-	
+	sig_stall <= '0';
 	case i_opcode is
 	   when "0010011" =>--I type ALU
 			sig_Jump<='0';
@@ -115,6 +116,17 @@ begin
 			sig_ALUSrc<='0';--x
 			sig_RegWrite<='1';
 			sig_ImmSrc<="11";
+		
+	   when "1111000" => -- custom instruction
+			sig_Jump<='0';
+			sig_ALUOp<="10"; --??
+			sig_Branch<='0';
+			sig_ResultSrc  <="11";
+			sig_MEMWrite<='0';
+			sig_ALUSrc<='0';
+			sig_RegWrite<='0'; -- dont write until done
+			sig_ImmSrc<="00";--xx
+			sig_stall <= '1';
 	   when others =>
 			sig_Jump<='0';
 			sig_ALUOp<="00";
@@ -136,5 +148,6 @@ o_MemWrite<=sig_MEMWrite;
 o_ALUSrc<=sig_ALUSrc;
 o_RegWrite<=sig_RegWrite;
 o_ImmSrc<=sig_ImmSrc;
+o_stall <= sig_stall;
 end Behavioral;
 
