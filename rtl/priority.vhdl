@@ -42,7 +42,7 @@ architecture Behavioral of enchanced_priority is
 signal highest_switch: unsigned(31 downto 0):=x"00000000";
 signal tmp : unsigned(31 downto 0):=x"00000000";
 signal temp_result : std_logic_vector(31 downto 0):=x"00000000";
-type FSM is (Zero, One);
+type FSM is (Zero);
 signal current_state, next_state: FSM;
 
 begin
@@ -68,14 +68,10 @@ begin
 				 highest_switch <=to_unsigned(i+1,32);
 			  end if;
 			end loop;
-			next_state <= One;
-			
-		when One =>
-			temp_result(to_integer(highest_switch))<='1';
 			next_state <= Zero;
 	end case;
 end process;
 
-o_r <= temp_result;
+o_r <= std_logic_vector(highest_switch);
 end Behavioral;
 
