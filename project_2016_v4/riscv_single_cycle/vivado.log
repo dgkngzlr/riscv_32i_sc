@@ -2,567 +2,98 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Sat Apr 30 00:03:20 2022
-# Process ID: 7052
-# Current directory: C:/Users/byzt/Desktop/vivada/riscv_single_cycle
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20884 C:\Users\byzt\Desktop\vivada\riscv_single_cycle\riscv_single_cycle.xpr
-# Log file: C:/Users/byzt/Desktop/vivada/riscv_single_cycle/vivado.log
-# Journal file: C:/Users/byzt/Desktop/vivada/riscv_single_cycle\vivado.jou
+# Start of session at: Tue May 24 09:13:48 2022
+# Process ID: 2764
+# Current directory: C:/Users/Beyazit/vivadoprojects/riscv_single_cycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8184 C:\Users\Beyazit\vivadoprojects\riscv_single_cycle\riscv_single_cycle.xpr
+# Log file: C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/vivado.log
+# Journal file: C:/Users/Beyazit/vivadoprojects/riscv_single_cycle\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.xpr
-INFO: [Project 1-313] Project file moved from 'C:/Users/Beyazit/vivadoprojects/riscv_single_cycle' since last save.
+open_project C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/byzt/Desktop/vivada/riscv_single_cycle' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
-open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 770.281 ; gain = 107.313
-check_syntax
-CRITICAL WARNING: [HDL 9-806] Syntax error near "o_ALUOp". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:40]
-CRITICAL WARNING: [HDL 9-374] Entity <controller> is not yet compiled. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:44]
-CRITICAL WARNING: [HDL 9-32] <sig_aluop> is already declared in this region. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:47]
-CRITICAL WARNING: [HDL 9-837] Type std_logic does not match with a string literal [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:66]
-CRITICAL WARNING: [HDL 9-837] Type std_logic does not match with a string literal [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:75]
-CRITICAL WARNING: [HDL 9-304] Character 'x' is not in element type std_logic [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:81]
-CRITICAL WARNING: [HDL 9-837] Type std_logic does not match with a string literal [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:84]
-CRITICAL WARNING: [HDL 9-837] Type std_logic does not match with a string literal [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:93]
-CRITICAL WARNING: [HDL 9-304] Character 'x' is not in element type std_logic [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:95]
-CRITICAL WARNING: [HDL 9-837] Type std_logic does not match with a string literal [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:102]
-CRITICAL WARNING: [HDL 9-304] Character 'x' is not in element type std_logic [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:104]
-CRITICAL WARNING: [HDL 9-837] Type std_logic does not match with a string literal [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:111]
-CRITICAL WARNING: [HDL 9-303] Character 'x' is not in type std_logic [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:115]
-CRITICAL WARNING: [HDL 9-837] Type std_logic does not match with a string literal [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:120]
-CRITICAL WARNING: [HDL 9-37] "i_opcode" cannot be used in this expression. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:63]
-CRITICAL WARNING: [HDL 9-37] "i_zero" cannot be used in this expression. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:128]
-CRITICAL WARNING: [HDL 9-986] Sensitivity list can have only static signal name [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:51]
-CRITICAL WARNING: [HDL 9-986] Sensitivity list can have only static signal name [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:51]
-CRITICAL WARNING: [HDL 9-56] <o_pcsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:131]
-CRITICAL WARNING: [HDL 9-69] <o_aluop> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:132]
-CRITICAL WARNING: [HDL 9-56] <o_resultsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:133]
-CRITICAL WARNING: [HDL 9-56] <o_memwrite> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:134]
-CRITICAL WARNING: [HDL 9-56] <o_alusrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:135]
-CRITICAL WARNING: [HDL 9-69] <o_regwrite> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:136]
-CRITICAL WARNING: [HDL 9-56] <o_immsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:137]
-CRITICAL WARNING: [HDL 9-806] Syntax error near "o_ALUOp". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:96]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:167]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:168]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_addr cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:168]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:170]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:171]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_data cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:171]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:173]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:174]
-CRITICAL WARNING: [HDL 9-69] <pc_target_reg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:175]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_pctarget cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:175]
-CRITICAL WARNING: [HDL 9-69] <con_pcsrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_target_reg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_muxout cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-69] <ins_mem_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_data cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-69] <decoder> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:181]
-CRITICAL WARNING: [HDL 9-69] <ins_mem_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:189]
-CRITICAL WARNING: [HDL 9-69] <con_immsrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:190]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:191]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_imm cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:191]
-CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:196]
-CRITICAL WARNING: [HDL 9-69] <con_regwrite> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:206]
-CRITICAL WARNING: [HDL 9-69] <dec_rs1> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:207]
-CRITICAL WARNING: [HDL 9-69] <dec_rs2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:208]
-CRITICAL WARNING: [HDL 9-69] <dec_wreg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:209]
-CRITICAL WARNING: [HDL 9-69] <alu_result> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:210]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data1> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:211]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_rdata1 cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:211]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:212]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_rdata2 cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:212]
-CRITICAL WARNING: [HDL 9-69] <alu_control> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:214]
-CRITICAL WARNING: [HDL 9-69] <con_alusrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:219]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:220]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:221]
-CRITICAL WARNING: [HDL 9-69] <alu_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:222]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_reg cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:222]
-CRITICAL WARNING: [HDL 9-69] <alu> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:224]
-check_syntax
-CRITICAL WARNING: [HDL 9-806] Syntax error near "o_ALUOp". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:40]
-CRITICAL WARNING: [HDL 9-374] Entity <controller> is not yet compiled. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:44]
-CRITICAL WARNING: [HDL 9-32] <sig_aluop> is already declared in this region. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:47]
-CRITICAL WARNING: [HDL 9-837] Type std_logic does not match with a string literal [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:66]
-CRITICAL WARNING: [HDL 9-837] Type std_logic does not match with a string literal [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:75]
-CRITICAL WARNING: [HDL 9-837] Type std_logic does not match with a string literal [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:84]
-CRITICAL WARNING: [HDL 9-837] Type std_logic does not match with a string literal [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:93]
-CRITICAL WARNING: [HDL 9-837] Type std_logic does not match with a string literal [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:102]
-CRITICAL WARNING: [HDL 9-837] Type std_logic does not match with a string literal [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:111]
-CRITICAL WARNING: [HDL 9-837] Type std_logic does not match with a string literal [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:120]
-CRITICAL WARNING: [HDL 9-37] "i_opcode" cannot be used in this expression. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:63]
-CRITICAL WARNING: [HDL 9-37] "i_zero" cannot be used in this expression. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:128]
-CRITICAL WARNING: [HDL 9-986] Sensitivity list can have only static signal name [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:51]
-CRITICAL WARNING: [HDL 9-986] Sensitivity list can have only static signal name [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:51]
-CRITICAL WARNING: [HDL 9-56] <o_pcsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:131]
-CRITICAL WARNING: [HDL 9-69] <o_aluop> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:132]
-CRITICAL WARNING: [HDL 9-56] <o_resultsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:133]
-CRITICAL WARNING: [HDL 9-56] <o_memwrite> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:134]
-CRITICAL WARNING: [HDL 9-56] <o_alusrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:135]
-CRITICAL WARNING: [HDL 9-69] <o_regwrite> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:136]
-CRITICAL WARNING: [HDL 9-56] <o_immsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:137]
-CRITICAL WARNING: [HDL 9-806] Syntax error near "o_ALUOp". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:96]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:167]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:168]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_addr cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:168]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:170]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:171]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_data cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:171]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:173]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:174]
-CRITICAL WARNING: [HDL 9-69] <pc_target_reg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:175]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_pctarget cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:175]
-CRITICAL WARNING: [HDL 9-69] <con_pcsrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_target_reg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_muxout cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-69] <ins_mem_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_data cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-69] <decoder> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:181]
-CRITICAL WARNING: [HDL 9-69] <ins_mem_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:189]
-CRITICAL WARNING: [HDL 9-69] <con_immsrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:190]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:191]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_imm cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:191]
-CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:196]
-CRITICAL WARNING: [HDL 9-69] <con_regwrite> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:206]
-CRITICAL WARNING: [HDL 9-69] <dec_rs1> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:207]
-CRITICAL WARNING: [HDL 9-69] <dec_rs2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:208]
-CRITICAL WARNING: [HDL 9-69] <dec_wreg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:209]
-CRITICAL WARNING: [HDL 9-69] <alu_result> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:210]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data1> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:211]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_rdata1 cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:211]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:212]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_rdata2 cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:212]
-CRITICAL WARNING: [HDL 9-69] <alu_control> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:214]
-CRITICAL WARNING: [HDL 9-69] <con_alusrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:219]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:220]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:221]
-CRITICAL WARNING: [HDL 9-69] <alu_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:222]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_reg cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:222]
-CRITICAL WARNING: [HDL 9-69] <alu> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:224]
-check_syntax
-CRITICAL WARNING: [HDL 9-806] Syntax error near "o_ALUOp". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:40]
-CRITICAL WARNING: [HDL 9-374] Entity <controller> is not yet compiled. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:44]
-CRITICAL WARNING: [HDL 9-303] Character '0' is not in type std_logic_vector [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:58]
-CRITICAL WARNING: [HDL 9-37] "i_opcode" cannot be used in this expression. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:63]
-CRITICAL WARNING: [HDL 9-37] "i_zero" cannot be used in this expression. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:128]
-CRITICAL WARNING: [HDL 9-986] Sensitivity list can have only static signal name [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:51]
-CRITICAL WARNING: [HDL 9-986] Sensitivity list can have only static signal name [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:51]
-CRITICAL WARNING: [HDL 9-56] <o_pcsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:131]
-CRITICAL WARNING: [HDL 9-69] <o_aluop> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:132]
-CRITICAL WARNING: [HDL 9-56] <o_resultsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:133]
-CRITICAL WARNING: [HDL 9-56] <o_memwrite> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:134]
-CRITICAL WARNING: [HDL 9-56] <o_alusrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:135]
-CRITICAL WARNING: [HDL 9-69] <o_regwrite> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:136]
-CRITICAL WARNING: [HDL 9-56] <o_immsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:137]
-CRITICAL WARNING: [HDL 9-806] Syntax error near "o_ALUOp". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:96]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:167]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:168]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_addr cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:168]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:170]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:171]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_data cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:171]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:173]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:174]
-CRITICAL WARNING: [HDL 9-69] <pc_target_reg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:175]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_pctarget cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:175]
-CRITICAL WARNING: [HDL 9-69] <con_pcsrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_target_reg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_muxout cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-69] <ins_mem_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_data cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-69] <decoder> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:181]
-CRITICAL WARNING: [HDL 9-69] <ins_mem_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:189]
-CRITICAL WARNING: [HDL 9-69] <con_immsrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:190]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:191]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_imm cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:191]
-CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:196]
-CRITICAL WARNING: [HDL 9-69] <con_regwrite> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:206]
-CRITICAL WARNING: [HDL 9-69] <dec_rs1> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:207]
-CRITICAL WARNING: [HDL 9-69] <dec_rs2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:208]
-CRITICAL WARNING: [HDL 9-69] <dec_wreg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:209]
-CRITICAL WARNING: [HDL 9-69] <alu_result> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:210]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data1> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:211]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_rdata1 cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:211]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:212]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_rdata2 cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:212]
-CRITICAL WARNING: [HDL 9-69] <alu_control> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:214]
-CRITICAL WARNING: [HDL 9-69] <con_alusrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:219]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:220]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:221]
-CRITICAL WARNING: [HDL 9-69] <alu_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:222]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_reg cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:222]
-CRITICAL WARNING: [HDL 9-69] <alu> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:224]
-check_syntax
-CRITICAL WARNING: [HDL 9-806] Syntax error near "o_ALUOp". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:40]
-CRITICAL WARNING: [HDL 9-374] Entity <controller> is not yet compiled. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:44]
-CRITICAL WARNING: [HDL 9-37] "i_opcode" cannot be used in this expression. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:62]
-CRITICAL WARNING: [HDL 9-37] "i_zero" cannot be used in this expression. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:127]
-CRITICAL WARNING: [HDL 9-986] Sensitivity list can have only static signal name [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:51]
-CRITICAL WARNING: [HDL 9-986] Sensitivity list can have only static signal name [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:51]
-CRITICAL WARNING: [HDL 9-56] <o_pcsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:130]
-CRITICAL WARNING: [HDL 9-69] <o_aluop> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:131]
-CRITICAL WARNING: [HDL 9-56] <o_resultsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:132]
-CRITICAL WARNING: [HDL 9-56] <o_memwrite> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:133]
-CRITICAL WARNING: [HDL 9-56] <o_alusrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:134]
-CRITICAL WARNING: [HDL 9-69] <o_regwrite> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:135]
-CRITICAL WARNING: [HDL 9-56] <o_immsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:136]
-CRITICAL WARNING: [HDL 9-806] Syntax error near "o_ALUOp". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:96]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:167]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:168]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_addr cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:168]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:170]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:171]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_data cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:171]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:173]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:174]
-CRITICAL WARNING: [HDL 9-69] <pc_target_reg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:175]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_pctarget cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:175]
-CRITICAL WARNING: [HDL 9-69] <con_pcsrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_target_reg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_muxout cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-69] <ins_mem_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_data cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-69] <decoder> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:181]
-CRITICAL WARNING: [HDL 9-69] <ins_mem_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:189]
-CRITICAL WARNING: [HDL 9-69] <con_immsrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:190]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:191]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_imm cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:191]
-CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:196]
-CRITICAL WARNING: [HDL 9-69] <con_regwrite> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:206]
-CRITICAL WARNING: [HDL 9-69] <dec_rs1> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:207]
-CRITICAL WARNING: [HDL 9-69] <dec_rs2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:208]
-CRITICAL WARNING: [HDL 9-69] <dec_wreg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:209]
-CRITICAL WARNING: [HDL 9-69] <alu_result> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:210]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data1> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:211]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_rdata1 cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:211]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:212]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_rdata2 cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:212]
-CRITICAL WARNING: [HDL 9-69] <alu_control> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:214]
-CRITICAL WARNING: [HDL 9-69] <con_alusrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:219]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:220]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:221]
-CRITICAL WARNING: [HDL 9-69] <alu_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:222]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_reg cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:222]
-CRITICAL WARNING: [HDL 9-69] <alu> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:224]
-check_syntax
-CRITICAL WARNING: [HDL 9-806] Syntax error near "o_ALUOp". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:40]
-CRITICAL WARNING: [HDL 9-374] Entity <controller> is not yet compiled. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:44]
-CRITICAL WARNING: [HDL 9-37] "i_opcode" cannot be used in this expression. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:63]
-CRITICAL WARNING: [HDL 9-37] "i_zero" cannot be used in this expression. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:128]
-CRITICAL WARNING: [HDL 9-986] Sensitivity list can have only static signal name [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:51]
-CRITICAL WARNING: [HDL 9-986] Sensitivity list can have only static signal name [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:51]
-CRITICAL WARNING: [HDL 9-56] <o_pcsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:131]
-CRITICAL WARNING: [HDL 9-69] <o_aluop> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:132]
-CRITICAL WARNING: [HDL 9-56] <o_resultsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:133]
-CRITICAL WARNING: [HDL 9-56] <o_memwrite> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:134]
-CRITICAL WARNING: [HDL 9-56] <o_alusrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:135]
-CRITICAL WARNING: [HDL 9-69] <o_regwrite> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:136]
-CRITICAL WARNING: [HDL 9-56] <o_immsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:137]
-CRITICAL WARNING: [HDL 9-806] Syntax error near "o_ALUOp". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:96]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:167]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:168]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_addr cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:168]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:170]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:171]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_data cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:171]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:173]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:174]
-CRITICAL WARNING: [HDL 9-69] <pc_target_reg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:175]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_pctarget cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:175]
-CRITICAL WARNING: [HDL 9-69] <con_pcsrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_target_reg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_muxout cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-69] <ins_mem_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_data cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-69] <decoder> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:181]
-CRITICAL WARNING: [HDL 9-69] <ins_mem_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:189]
-CRITICAL WARNING: [HDL 9-69] <con_immsrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:190]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:191]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_imm cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:191]
-CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:196]
-CRITICAL WARNING: [HDL 9-69] <con_regwrite> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:206]
-CRITICAL WARNING: [HDL 9-69] <dec_rs1> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:207]
-CRITICAL WARNING: [HDL 9-69] <dec_rs2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:208]
-CRITICAL WARNING: [HDL 9-69] <dec_wreg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:209]
-CRITICAL WARNING: [HDL 9-69] <alu_result> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:210]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data1> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:211]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_rdata1 cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:211]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:212]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_rdata2 cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:212]
-CRITICAL WARNING: [HDL 9-69] <alu_control> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:214]
-CRITICAL WARNING: [HDL 9-69] <con_alusrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:219]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:220]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:221]
-CRITICAL WARNING: [HDL 9-69] <alu_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:222]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_reg cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:222]
-CRITICAL WARNING: [HDL 9-69] <alu> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:224]
-check_syntax
-CRITICAL WARNING: [HDL 9-806] Syntax error near "o_ALUOp". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:40]
-CRITICAL WARNING: [HDL 9-374] Entity <controller> is not yet compiled. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:44]
-CRITICAL WARNING: [HDL 9-37] "i_opcode" cannot be used in this expression. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:63]
-CRITICAL WARNING: [HDL 9-986] Sensitivity list can have only static signal name [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:51]
-CRITICAL WARNING: [HDL 9-986] Sensitivity list can have only static signal name [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:51]
-CRITICAL WARNING: [HDL 9-37] "i_zero" cannot be used in this expression. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:129]
-CRITICAL WARNING: [HDL 9-56] <o_pcsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:131]
-CRITICAL WARNING: [HDL 9-69] <o_aluop> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:132]
-CRITICAL WARNING: [HDL 9-56] <o_resultsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:133]
-CRITICAL WARNING: [HDL 9-56] <o_memwrite> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:134]
-CRITICAL WARNING: [HDL 9-56] <o_alusrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:135]
-CRITICAL WARNING: [HDL 9-69] <o_regwrite> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:136]
-CRITICAL WARNING: [HDL 9-56] <o_immsrc> is not a signal. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:137]
-CRITICAL WARNING: [HDL 9-806] Syntax error near "o_ALUOp". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:96]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:167]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:168]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_addr cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:168]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:170]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:171]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_data cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:171]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:173]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:174]
-CRITICAL WARNING: [HDL 9-69] <pc_target_reg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:175]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_pctarget cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:175]
-CRITICAL WARNING: [HDL 9-69] <con_pcsrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_target_reg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_muxout cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-69] <ins_mem_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_data cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-69] <decoder> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:181]
-CRITICAL WARNING: [HDL 9-69] <ins_mem_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:189]
-CRITICAL WARNING: [HDL 9-69] <con_immsrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:190]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:191]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_imm cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:191]
-CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:196]
-CRITICAL WARNING: [HDL 9-69] <con_regwrite> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:206]
-CRITICAL WARNING: [HDL 9-69] <dec_rs1> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:207]
-CRITICAL WARNING: [HDL 9-69] <dec_rs2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:208]
-CRITICAL WARNING: [HDL 9-69] <dec_wreg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:209]
-CRITICAL WARNING: [HDL 9-69] <alu_result> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:210]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data1> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:211]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_rdata1 cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:211]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:212]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_rdata2 cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:212]
-CRITICAL WARNING: [HDL 9-69] <alu_control> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:214]
-CRITICAL WARNING: [HDL 9-69] <con_alusrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:219]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:220]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:221]
-CRITICAL WARNING: [HDL 9-69] <alu_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:222]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_reg cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:222]
-CRITICAL WARNING: [HDL 9-69] <alu> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:224]
-check_syntax
-CRITICAL WARNING: [HDL 9-806] Syntax error near "o_ALUOp". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:96]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:167]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:168]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_addr cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:168]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:170]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:171]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_data cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:171]
-CRITICAL WARNING: [HDL 9-69] <pc_reg_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:173]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:174]
-CRITICAL WARNING: [HDL 9-69] <pc_target_reg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:175]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_pctarget cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:175]
-CRITICAL WARNING: [HDL 9-69] <con_pcsrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_inc_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_target_reg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_muxout cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:177]
-CRITICAL WARNING: [HDL 9-69] <pc_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-69] <ins_mem_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_data cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:179]
-CRITICAL WARNING: [HDL 9-69] <decoder> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:181]
-CRITICAL WARNING: [HDL 9-69] <ins_mem_output> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:189]
-CRITICAL WARNING: [HDL 9-69] <con_immsrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:190]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:191]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_imm cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:191]
-CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:196]
-CRITICAL WARNING: [HDL 9-69] <con_regwrite> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:206]
-CRITICAL WARNING: [HDL 9-69] <dec_rs1> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:207]
-CRITICAL WARNING: [HDL 9-69] <dec_rs2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:208]
-CRITICAL WARNING: [HDL 9-69] <dec_wreg> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:209]
-CRITICAL WARNING: [HDL 9-69] <alu_result> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:210]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data1> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:211]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_rdata1 cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:211]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:212]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_rdata2 cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:212]
-CRITICAL WARNING: [HDL 9-69] <alu_control> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:214]
-CRITICAL WARNING: [HDL 9-69] <con_alusrc> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:219]
-CRITICAL WARNING: [HDL 9-69] <reg_file_data2> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:220]
-CRITICAL WARNING: [HDL 9-69] <sig_ex_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:221]
-CRITICAL WARNING: [HDL 9-69] <alu_src_mux_out> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:222]
-CRITICAL WARNING: [HDL 9-192] Actual of formal out port o_reg cannot be an expression [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:222]
-CRITICAL WARNING: [HDL 9-69] <alu> is not declared. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:224]
-check_syntax
-CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:196]
-CRITICAL WARNING: [HDL 9-432] Formal <i_opcode> has no actual or default value. [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:195]
-INFO: [HDL 9-1408] i_opcode is declared here [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:89]
-INFO: [HDL 9-1408] i_zero is declared here [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd:90]
-check_syntax
-INFO: [Vivado 12-4796] No errors or warning reported.
-check_syntax
-CRITICAL WARNING: [HDL 9-304] Character 'x' is not in element type std_logic [C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:81]
-check_syntax
-INFO: [Vivado 12-4796] No errors or warning reported.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Xlinx_2016/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 656.125 ; gain = 82.813
 launch_simulation
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [USF-XSim-37] Inspecting design source files for 'tb_top_test' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.sim/sim_1/behav'
 "xvhdl -m64 --relax -prj tb_top_test_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/SUB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/SUB.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity SUB
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/xor_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/xor_module.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity xor_module
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/srl_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/srl_module.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity srl_module
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/sra_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/sra_module.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity sra_module
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/slt_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/slt_module.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity slt_module
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/sltu_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/sltu_module.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity sltu_module
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/SLL.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/SLL.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity SLL_op
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/or_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/or_module.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity or_module
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/and_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/and_module.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity and_module
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/ADD.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity ADD
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/PC_target.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/write_data_mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity write_data_mux
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/data_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/PC_target.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity PC_target
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/PC_src_mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/PC_src_mux.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity PC_src_mux
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/reg_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/reg_file.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity reg_file
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU/ALU.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity ALU
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/sign_extend.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/sign_extend.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity sign_extend
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/pc_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/pc_reg.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity pc_reg
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/pc_inc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/pc_inc.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity pc_inc
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/instruct_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/instruct_mem.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity instruct_mem
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/Decoder.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Decoder
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity controller
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/alu_src_mux.vhd" into library xil_defaultlib
+ERROR: [VRFC 10-1412] syntax error near 6 [C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:33]
+ERROR: [VRFC 10-1504] unit controller ignored due to previous errors [C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:32]
+INFO: [VRFC 10-240] VHDL file C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/alu_src_mux.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity alu_src_mux
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU_control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/ALU_control.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity ALU_control
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/top.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity top
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sim_1/new/tb_top_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sim_1/new/tb_top_test.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity tb_top_test
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 796.668 ; gain = 0.000
-INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.sim/sim_1/behav'
-Vivado Simulator 2016.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 4df49332099e45e89e88a949980a3580 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_test_behav xil_defaultlib.tb_top_test -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavioral of entity xil_defaultlib.pc_reg [pc_reg_default]
-Compiling architecture behavioral of entity xil_defaultlib.pc_inc [pc_inc_default]
-Compiling architecture behavioral of entity xil_defaultlib.PC_target [pc_target_default]
-Compiling architecture behavioral of entity xil_defaultlib.PC_src_mux [pc_src_mux_default]
-Compiling architecture behavioral of entity xil_defaultlib.instruct_mem [instruct_mem_default]
-Compiling architecture behavioral of entity xil_defaultlib.Decoder [decoder_default]
-Compiling architecture behavioral of entity xil_defaultlib.sign_extend [sign_extend_default]
-Compiling architecture behavioral of entity xil_defaultlib.controller [controller_default]
-Compiling architecture behavioral of entity xil_defaultlib.reg_file [reg_file_default]
-Compiling architecture behavioral of entity xil_defaultlib.ALU_control [alu_control_default]
-Compiling architecture behavioral of entity xil_defaultlib.alu_src_mux [alu_src_mux_default]
-Compiling architecture behavioral of entity xil_defaultlib.ADD [add_default]
-Compiling architecture behavioral of entity xil_defaultlib.SUB [sub_default]
-Compiling architecture behavioral of entity xil_defaultlib.SLL_op [sll_op_default]
-Compiling architecture behavioral of entity xil_defaultlib.slt_module [slt_module_default]
-Compiling architecture behavioral of entity xil_defaultlib.sltu_module [sltu_module_default]
-Compiling architecture behavioral of entity xil_defaultlib.xor_module [xor_module_default]
-Compiling architecture behavioral of entity xil_defaultlib.srl_module [srl_module_default]
-Compiling architecture behavioral of entity xil_defaultlib.or_module [or_module_default]
-Compiling architecture behavioral of entity xil_defaultlib.and_module [and_module_default]
-Compiling architecture behavioral of entity xil_defaultlib.sra_module [sra_module_default]
-Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
-Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_top_test
-Built simulation snapshot tb_top_test_behav
-
-****** Webtalk v2016.4 (64-bit)
-  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
-  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.sim/sim_1/behav/xsim.dir/tb_top_test_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sat Apr 30 01:49:03 2022...
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 796.668 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_top_test_behav -key {Behavioral:sim_1:Functional:tb_top_test} -tclbatch {tb_top_test.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.4
-Time resolution is 1 ps
-source tb_top_test.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-Failure: Assertion violation
-Time: 260 ns  Iteration: 0  Process: /tb_top_test/stim_proc  File: C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sim_1/new/tb_top_test.vhd
-$finish called at time : 260 ns : File "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sim_1/new/tb_top_test.vhd" Line 83
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_test_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 796.668 ; gain = 0.000
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 10 us
-Failure: Assertion violation
-Time: 260 ns  Iteration: 0  Process: /tb_top_test/stim_proc  File: C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sim_1/new/tb_top_test.vhd
-$finish called at time : 260 ns : File "C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.srcs/sim_1/new/tb_top_test.vhd" Line 83
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 695.824 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 695.824 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+check_syntax
+CRITICAL WARNING: [HDL 9-806] Syntax error near "6". [C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:33]
+CRITICAL WARNING: [HDL 9-69] <i_opcode> is not declared. [C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:63]
+CRITICAL WARNING: [HDL 9-69] <i_opcode> is not declared. [C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:51]
+CRITICAL WARNING: [HDL 9-69] <i_zero> is not declared. [C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:51]
+CRITICAL WARNING: [HDL 9-69] <i_zero> is not declared. [C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:129]
+CRITICAL WARNING: [HDL 9-9] Found 0 definitions for operator "and". [C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/rtl/controller.vhd:129]
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 30 01:51:59 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue May 24 09:16:47 2022...

@@ -2,28 +2,14 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Sat Apr 30 00:03:20 2022
-# Process ID: 7052
-# Current directory: C:/Users/byzt/Desktop/vivada/riscv_single_cycle
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20884 C:\Users\byzt\Desktop\vivada\riscv_single_cycle\riscv_single_cycle.xpr
-# Log file: C:/Users/byzt/Desktop/vivada/riscv_single_cycle/vivado.log
-# Journal file: C:/Users/byzt/Desktop/vivada/riscv_single_cycle\vivado.jou
+# Start of session at: Tue May 24 09:13:48 2022
+# Process ID: 2764
+# Current directory: C:/Users/Beyazit/vivadoprojects/riscv_single_cycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8184 C:\Users\Beyazit\vivadoprojects\riscv_single_cycle\riscv_single_cycle.xpr
+# Log file: C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/vivado.log
+# Journal file: C:/Users/Beyazit/vivadoprojects/riscv_single_cycle\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/byzt/Desktop/vivada/riscv_single_cycle/riscv_single_cycle.xpr
-check_syntax
-check_syntax
-check_syntax
-check_syntax
-check_syntax
-check_syntax
-check_syntax
-check_syntax
-check_syntax
-check_syntax
-check_syntax
+open_project C:/Users/Beyazit/vivadoprojects/riscv_single_cycle/riscv_single_cycle.xpr
 launch_simulation
-source tb_top_test.tcl
-restart
-run 10 us
-close_sim
+check_syntax

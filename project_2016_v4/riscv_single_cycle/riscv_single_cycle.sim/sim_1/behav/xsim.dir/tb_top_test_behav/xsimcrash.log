@@ -1,39 +1,43 @@
-Unable to capture context for thread 21176 in process 23200, can not generate back trace
-Unable to capture context for thread 24840 in process 23200, can not generate back trace
-Unable to capture context for thread 25036 in process 23200, can not generate back trace
-Exception at PC 0x00007FF87622BB93
+Unable to capture context for thread 3752 in process 9820, can not generate back trace
+Unable to capture context for thread 15484 in process 9820, can not generate back trace
+Unable to capture context for thread 20408 in process 9820, can not generate back trace
+Unable to capture context for thread 23060 in process 9820, can not generate back trace
+Unable to capture context for thread 10124 in process 9820, can not generate back trace
+Exception at PC 0x00007FFAE2584FD9
+Unable to capture context for thread 3752 in process 9820, can not generate back trace
+Unable to capture context for thread 20408 in process 9820, can not generate back trace
+Exception at PC 0x00007FFA714ABB93
 Printing stacktrace...
 
-Exception at PC 0x00007FF8E5F84F69
-Exception at PC 0x00007FF8E5F84F69
-Exception at PC 0x00007FF8E5F84F69
-Exception at PC 0x00007FF8E5F84F69
-Exception at PC 0x00007FF8E5F84F69
-Exception at PC 0x00007FF8E5F84F69
-Exception at PC 0x00007FF8E5F84F69
-Exception at PC 0x00007FF8E5F84F69
-Exception at PC 0x00007FF8E5F84F69
-Exception at PC 0x00007FF8E5F84F69
-Exception at PC 0x00007FF8E5F84F69
-Exception at PC 0x00007FF8E5F84F69
-Exception at PC 0x00007FF8E5F84F69
-Exception at PC 0x00007FF8E5F84F69
-[0]  [0x00007FF87622BB93]
-[1]  [0x00007FF87622BB93]
-[2]  [0x00007FF87622B4A1]
-[3]  [0x00007FF87622B3EF]
-[4]  [0x00007FF8762119FE]
-[5]  [0x00007FF876210ED1]
-[6]  [0x00007FF876210D76]
-[7]  [0x00007FF8761B79F6]
-[8]  [0x00007FF8761A7AFB]
-[9]  [0x00007FF8762CE90A]
-[10]  [0x00007FF8762E9F87]
-[11]  [0x00007FF8762EA05F]
-[12] (BaseThreadInitThunk+0x14) [0x00007FF8E71C7034]
-[13] (RtlUserThreadStart+0x21) [0x00007FF8E83C2651]
+Exception at PC 0x00007FFAE2584FD9
+Exception at PC 0x00007FFAE2584FD9
+Exception at PC 0x00007FFAE2584FD9
+Exception at PC 0x00007FFAE2584FD9
+Exception at PC 0x00007FFAE2584FD9
+Exception at PC 0x00007FFAE2584FD9
+Exception at PC 0x00007FFAE2584FD9
+[0]  [0x00007FFA714ABB93]
+[1]  [0x00007FFA714ABB93]
+[2]  [0x00007FFA714AB4A1]
+[3]  [0x00007FFA714AB3EF]
+[4]  [0x00007FFA714919FE]
+[5]  [0x00007FFA71490ED1]
+[6]  [0x00007FFA71490D76]
+[7]  [0x00007FFA714379F6]
+[8]  [0x00007FFA71427AFB]
+[9]  [0x00007FFA7154E90A]
+[10]  [0x00007FFA71569F87]
+[11]  [0x00007FFA7156A05F]
+[12] (BaseThreadInitThunk+0x14) [0x00007FFAE33F7034]
+[13] (RtlUserThreadStart+0x21) [0x00007FFAE4E42651]
 Done
-Exception at PC 0x00007FF8E5F84F69
-Exception at PC 0x00007FF8E5F84F69
-Exception at PC 0x00007FF8E5F84F69
-Exception at PC 0x00007FF8E5F84F69
+Exception at PC 0x00007FFAE2584FD9
+Exception at PC 0x00007FFAE2584FD9
+Exception at PC 0x00007FFAE2584FD9
+Exception at PC 0x00007FFAE2584FD9
+Exception at PC 0x00007FFAE2584FD9
+Exception at PC 0x00007FFAE2584FD9
+Exception at PC 0x00007FFAE2584FD9
+Exception at PC 0x00007FFAE2584FD9
+Exception at PC 0x00007FFAE2584FD9
+Exception at PC 0x00007FFAE2584FD9

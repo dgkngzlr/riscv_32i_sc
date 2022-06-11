@@ -33,6 +33,7 @@ entity pc_reg is
 port(
 	i_clk : in std_logic;
 	i_rst : in std_logic;
+	i_en  : in std_logic;
 	i_addr : in std_logic_vector(31 downto 0);
 	o_addr : out std_logic_vector(31 downto 0)
 );
@@ -46,8 +47,9 @@ process(i_clk)
 begin
 	if rising_edge(i_clk) then
 		
-		o_addr <= i_addr;
-		
+		if i_en = '1' then
+			o_addr <= i_addr;
+		end if;
 		if i_rst = '1' then
 			o_addr <= x"00400000";
 		end if;

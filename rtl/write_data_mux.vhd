@@ -36,6 +36,7 @@ entity write_data_mux is
            i_AluResult : in STD_LOGIC_VECTOR (31 downto 0);
            i_ReadData : in STD_LOGIC_VECTOR (31 downto 0);
 		   i_PcInc : in STD_LOGIC_VECTOR (31 downto 0);
+		   i_ReadBarret : in STD_LOGIC_VECTOR (31 downto 0);
            o_data: out STD_LOGIC_VECTOR (31 downto 0));
 end write_data_mux;
 
@@ -46,5 +47,5 @@ begin
 o_data<= i_AluResult when i_ResultSrc="00" else
 		 i_ReadData when i_ResultSrc="01" else
 		 i_PcInc when i_ResultSrc="10" else
-		 x"00000000";
+		 i_ReadBarret;
 end Behavioral;
